@@ -11,6 +11,7 @@ uvicorn = "*"
 flake8 = "*"
 black = "*"
 isort = "*"
+mypy = "*"
 
 [requires]
 python_version = "3.12"
