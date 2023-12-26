@@ -1,13 +1,6 @@
 from fastapi import FastAPI
 
+from .api.router import api_router
+
 app = FastAPI()
-
-
-@app.get("/")
-def grandma():
-    return "Works nicely"
-
-
-@app.get("/grandma/")
-def grandma2():
-    return "Works nicelyyyyyyy"
+app.include_router(api_router)

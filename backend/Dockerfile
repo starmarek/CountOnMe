@@ -3,6 +3,7 @@ FROM python:3.12
 WORKDIR /app
 
 COPY Pipfile .
+COPY .env .
 COPY Pipfile.lock .
 COPY src .
 
